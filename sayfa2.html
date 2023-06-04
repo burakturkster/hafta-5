@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa 2</title>
+    <style>
+        div#popup1 {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: black;
+            color: white;
+            padding: 3rem;
+
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, rerum libero nostrum esse voluptate explicabo odit numquam minus possimus distinctio tempore, perspiciatis laudantium quae velit illum tenetur nesciunt consectetur deleniti natus fuga placeat! Voluptas dicta perspiciatis ratione nobis numquam debitis.</p>
+        <p>Repellat at a, facere quibusdam laudantium asperiores voluptatem. Ipsa suscipit accusamus consequuntur culpa ratione impedit consectetur illum nulla, quia recusandae cupiditate aliquid aperiam nisi sint obcaecati ex molestiae quos neque est libero? Officia enim voluptatem mollitia iste officiis modi perferendis.</p>
+        <p>Aspernatur, veniam. Odio esse delectus accusamus officiis aperiam, reprehenderit ex? Ea nihil tenetur officia expedita atque doloribus minima! Eveniet nemo inventore impedit aut neque placeat laborum dolorum asperiores at eligendi repellendus autem sequi voluptate omnis, excepturi est repellat mollitia harum!</p>
+        <p>Sint, inventore nesciunt mollitia, numquam enim veritatis nemo porro vel voluptatum vitae adipisci quod ex sequi natus perferendis culpa rerum optio labore non possimus dolor a nihil. Veritatis neque atque ratione commodi, tenetur, laudantium deleniti quod iste ex quae sed?</p>
+        <p>Id dolorum nemo illum modi et non. Incidunt, perspiciatis eum officiis repellat assumenda, esse odit dolorem velit omnis, eveniet molestiae placeat magnam animi ab? At eos, fugiat dolor dolorem dolores quo, expedita, corporis ad labore voluptatem rerum. Id, labore ad.</p>
+        <p>Sit est recusandae necessitatibus quae voluptas repellendus debitis praesentium atque neque magni, ad iusto quisquam ipsum, perferendis, distinctio fuga explicabo laborum adipisci tenetur fugiat dicta facilis facere repellat? Aliquid id hic, recusandae cum ab officiis cupiditate accusantium commodi mollitia adipisci.</p>
+        <p>Voluptatem totam pariatur magnam, cum necessitatibus omnis nobis laudantium placeat dicta soluta nemo harum aperiam exercitationem doloribus iusto similique, modi porro? Minima deleniti reprehenderit ipsum dolores molestiae dolor voluptas debitis quae esse, illum rem itaque culpa distinctio necessitatibus blanditiis explicabo!</p>
+        <p>Quis quos, adipisci tempore pariatur explicabo fuga recusandae at ipsam illum quod et, blanditiis quasi voluptatum? Dolores consequuntur vel itaque quod! Magni obcaecati minus quas exercitationem incidunt explicabo illo consectetur. Inventore iusto error possimus itaque aliquid laboriosam deleniti dicta dolorum.</p>
+        <p>Odio quis voluptates numquam ipsa vitae nihil alias officiis aliquam, est ipsam provident eos sequi sit veniam tempore, placeat illum repellendus repellat. Minus cumque beatae nobis accusamus esse vero magni minima deserunt. Deleniti nostrum enim ullam ipsa esse voluptates nesciunt.</p>
+        <p>Repudiandae mollitia odio libero ex ipsum magni consequuntur possimus quam quaerat velit temporibus soluta maiores nisi illum quidem dolorum iusto nulla voluptatibus iure commodi veritatis asperiores, ad nobis dignissimos! Fugiat in tempore dignissimos possimus veritatis dolor totam quia incidunt nisi!</p>
+    </section>
+
+    <div id="popup1">
+        Bugün tüm alışverişlerde kargo ücretsiz!
+    </div>
+
+    <script>
+        const popup1Elemani = document.querySelector("#popup1")
+
+        setTimeout(()=>{popup1Elemani.style.display = "block"}, 4000)
+
+        const bodyElemani = document.querySelector("body")
+        bodyElemani.addEventListener("click", (olay)=>{
+
+            if(olay.target.id !== "popup1"){popup1Elemani.style.display = "none"}
+        }, true)
+
+    </script>
+</body>
+</html>
